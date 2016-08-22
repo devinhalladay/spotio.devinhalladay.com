@@ -4,16 +4,51 @@
 @import "fonts";
 @import "milligram/all";
 
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
 main {
+  display: block;
+  overflow: hidden;
+  position: relative;
   width: 100%;
+}
+
+.animate-in {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s;
 }
 
 header {
   background-color: $color-background-secondary;
-  height: 45rem;
+  height: 21em;
   text-align: center;
   padding-top: 10rem;
-  margin-top: 5.2rem;
+  margin-top: 1.2rem;
+  @media (max-width: 40rem) {
+    height: 35rem;
+    margin-top: -0.8rem;
+  }
+  * {
+    -webkit-animation-name: welcome;
+    -webkit-animation-duration: .9s;
+  }
 }
 
 @import "components/all"

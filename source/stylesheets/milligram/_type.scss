@@ -102,7 +102,6 @@ h1, .h1 {
   font-size: 4rem;
   letter-spacing: -0.1rem;
   line-height: 1.2;
-  font-weight: 700;
 }
 
 h2, .h2 {
@@ -198,4 +197,8 @@ hr {
   border-top: 0.1rem solid $color-background-secondary;
   margin-bottom: 3.5rem;
   margin-top: 3rem;
+}
+
+b, strong {
+  font-weight: 700;
 }

@@ -5,8 +5,56 @@ title: Spotio: An Rdio-inspired skin for Spotify
   <%= partial "partials/nav" %>
 
   <header>
-    <h1>Spotio</h1>
-    <h2 class="h4">An Rdio-Inspired Skin for Spotify</h2>
-    <a href="#" id="spotio-download-button" class="button button-large">Download</a>
+    <div class="animate-in">
+      <h1>Spotio</h1>
+      <p>An Rdio-inspired skin for Spotify.app</p>
+      <a href="#" id="spotio-download-button" class="button button-large">Download</a>
+      <br>
+      <small><i>Current version: v1.0</i></small>
+      <div class="share">
+        <a class="github-button" href="https://github.com/devinhalladay/spotio" data-icon="octicon-star" data-style="mega" data-count-href="/devinhalladay/spotio/stargazers" data-count-api="/repos/devinhalladay/spotio#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star devinhalladay/spotio on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/devinhalladay/spotio/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/devinhalladay/spotio/network" data-count-api="/repos/devinhalladay/spotio#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork devinhalladay/spotio on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/devinhalladay/spotio/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/devinhalladay/spotio#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue devinhalladay/spotio on GitHub">Issue</a>
+          </div>
+    </div>
   </header>
+
+  <section class="container">
+		<div class="animate-in">
+		  <h4 class="title">Screenshots</h4>
+      <div class="container-breaker">
+        <% for i in 1...6 %>
+          <img class="bordered" src="/images/<%= i %>.png" alt="Screenshot of Spotio, an Rdio-inspired skin for Spotify">
+        <% end %>
+      </div>
+		</div>
+	</section>
+
+  <section class="container">
+    <h4 class="title">Installation</h4>
+    <ul>
+      <li>Quit your local Spotify app.</li>
+      <li>Make sure you have allowed opening applications from unidentified developers in your system security settings, otherwise this won't work.</li>
+      <li>Download the zipped up Spotify.app binary: <a href="#" id="spotio-download-button">download</a>.</li>
+      <li>Unzip and launch the app! If you like the way it looks, replace your local Spotify.app with the Spotio version.</li>
+    </ul>
+  </section>
+
+  <section class="container">
+		<h4 class="title">Why?</h4>
+    <p><strong>I sorely miss Rdio.</strong> It was the perfect music streaming service: quality streaming, massive selection, perfect UX, beautiful UI, and wonderful social interaction features. When it was bought by Pandora, many of us were left out in the dust and were forced to choose between lesser services like Apple Music, Spotify, and Google Play Music.</p>
+    <p>If you decided to go with Spotify but, like me, you miss Rdio's light UI, you're in luck—<strong>I discovered that you can skin the Spotify app with CSS</strong>.</p>
+    <p><i>Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my own selfish desires, not to do it "better" than the Spotify team did.</i></p>
+	</section>
+
+  <section class="container">
+    <h4 class="title">Contributing</h4>
+    <p>This skin isn't complete yet, but it is release-ready. If you want to help out by redesigning icons, fixing contrast issues, skinning unstyled parts of the app, or otherwise improving this skin, I'd be happy to have you as a contributor!</p>
+  </section>
+
+  <section class="container">
+    <footer class="footer">
+      <p>Designed and developed by <a target="blank" href="http://devinhalladay.com" title="Devin Halladay">Devin Halladay</a>. Licensed under the <a target="blank" href="https://github.com/devinhalladay/spotio#license" title="MIT License">MIT License</a>.</p>
+    </footer>
+  </section>
 </main>
