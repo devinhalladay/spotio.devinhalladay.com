@@ -7,8 +7,9 @@ title: "Spotio: An Rdio-inspired skin for Spotify"
   <header>
     <div class="animate-in">
       <h1>Spotio</h1>
-      <p>An Rdio-inspired skin for Spotify.app</p>
-      <a href="#" id="spotio-download-button" class="button button-large">Download</a>
+      <p>A proof-of-concept Rdio-inspired skin for Spotify.app</p>
+      <a href="#" onclick="ga('send', 'event', 'button', 'click', 'Download button');" id="spotio-download-button" class="button button-large">Download</a>
+
       <br>
       <small><i>Current version: v1.0</i></small>
       <div class="share">
@@ -18,6 +19,14 @@ title: "Spotio: An Rdio-inspired skin for Spotify"
           </div>
     </div>
   </header>
+
+  <section class="container">
+		<div class="animate-in">
+		  <div class="well alert">
+		    <strong>Important:</strong> Please make sure you allow apps from anywhere in your Mac's Security preferences, otherwise this app will not launch!
+		  </div>
+		</div>
+	</section>
 
   <section class="container">
 		<div class="animate-in">
@@ -35,8 +44,18 @@ title: "Spotio: An Rdio-inspired skin for Spotify"
     <ul>
       <li>Quit your local Spotify app.</li>
       <li>Make sure you have allowed opening applications from unidentified developers in your system security settings, otherwise this won't work.</li>
-      <li>Download the zipped up Spotify.app binary: <a href="#" id="spotio-download-button">download</a>.</li>
+      <li>Download the zipped up Spotify.app binary: <a href="#" id="spotio-download-button" onclick="ga('send', 'event', 'button', 'click', 'Download button');">download</a>.</li>
       <li>Unzip and launch the app! If you like the way it looks, replace your local Spotify.app with the Spotio version.</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h4 class="title">Known/Possible Issues</h4>
+    <p>There may be some issues with this as of now but these are untested/unproven.</p>
+    <ul>
+      <li>This app <i><strong>may</strong></i> stop updates from occurring. I'm working on finding out.</li>
+      <li>This app seems to break the developer certificate used by Spotify, so you need to allow opening apps from anywhere in order for it to work.</li>
+      <li>As of now, updates will, obviously, overwrite Spotio. I'm working on a counter-update system to fix that.</li>
     </ul>
   </section>
 
