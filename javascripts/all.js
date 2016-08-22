@@ -1,0 +1,1 @@
+function GetLatestReleaseInfo(){$.getJSON("https://api.github.com/repos/devinhalladay/spotio/tags").done(function(t){var e=t[0],o=e.name;e.zipball_url;$("#spotio-download-button").attr("href","https://github.com/devinhalladay/spotio/releases/download/"+o+"/Spotify.zip")})}$(document).ready(function(){GetLatestReleaseInfo()});

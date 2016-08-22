@@ -6,20 +6,95 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Middleman</title>
+    <title>Spotio: An Rdio-inspired skin for Spotify</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
     <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="/javascripts/all.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <body class="index">
     <main>
+  <nav class="navigation">
+  <section class="container">
+
+    <a class="navigation-title" href="/">
+      <h1 class="title">Spotio</h1>
+    </a>
+
+    <ul class="navigation-list float-right"><li class="navigation-item">
+        <a class="navigation-link" href="http://devinhalladay.com">Made by Devin Halladay</a>
+      </li>
+    </ul>
+    <a class="hidden-xs github" href="https://github.com/devinhalladay/spotio" title="Spotio on Github" target="blank">
+      <svg width="80" height="80" viewBox="0 0 250 250" class="github">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+  </section>
+</nav>
+
+
   <header>
-    <h1>Spotio</h1>
-    <h2 class="h4">An Rdio-Inspired Skin for Spotify</h2>
+    <div class="animate-in">
+      <h1>Spotio</h1>
+      <p>An Rdio-inspired skin for Spotify.app</p>
+      <a href="#" id="spotio-download-button" class="button button-large">Download</a>
+      <br>
+      <small><i>Current version: v1.0</i></small>
+      <div class="share">
+        <a class="github-button" href="https://github.com/devinhalladay/spotio" data-icon="octicon-star" data-style="mega" data-count-href="/devinhalladay/spotio/stargazers" data-count-api="/repos/devinhalladay/spotio#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star devinhalladay/spotio on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/devinhalladay/spotio/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/devinhalladay/spotio/network" data-count-api="/repos/devinhalladay/spotio#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork devinhalladay/spotio on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/devinhalladay/spotio/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/devinhalladay/spotio#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue devinhalladay/spotio on GitHub">Issue</a>
+          </div>
+    </div>
   </header>
+
+  <section class="container">
+		<div class="animate-in">
+		  <h4 class="title">Screenshots</h4>
+      <div class="container-breaker">
+          <img class="bordered" src="/images/1.png" alt="Screenshot of Spotio, an Rdio-inspired skin for Spotify">
+          <img class="bordered" src="/images/2.png" alt="Screenshot of Spotio, an Rdio-inspired skin for Spotify">
+          <img class="bordered" src="/images/3.png" alt="Screenshot of Spotio, an Rdio-inspired skin for Spotify">
+          <img class="bordered" src="/images/4.png" alt="Screenshot of Spotio, an Rdio-inspired skin for Spotify">
+          <img class="bordered" src="/images/5.png" alt="Screenshot of Spotio, an Rdio-inspired skin for Spotify">
+      </div>
+		</div>
+	</section>
+
+  <section class="container">
+    <h4 class="title">Installation</h4>
+    <ul>
+      <li>Quit your local Spotify app.</li>
+      <li>Make sure you have allowed opening applications from unidentified developers in your system security settings, otherwise this won't work.</li>
+      <li>Download the zipped up Spotify.app binary: <a href="#" id="spotio-download-button">download</a>.</li>
+      <li>Unzip and launch the app! If you like the way it looks, replace your local Spotify.app with the Spotio version.</li>
+    </ul>
+  </section>
+
+  <section class="container">
+		<h4 class="title">Why?</h4>
+    <p><strong>I sorely miss Rdio.</strong> It was the perfect music streaming service: quality streaming, massive selection, perfect UX, beautiful UI, and wonderful social interaction features. When it was bought by Pandora, many of us were left out in the dust and were forced to choose between lesser services like Apple Music, Spotify, and Google Play Music.</p>
+    <p>If you decided to go with Spotify but, like me, you miss Rdio's light UI, you're in luck—<strong>I discovered that you can skin the Spotify app with CSS</strong>.</p>
+    <p><i>Disclaimer: I have nothing but respect for the Spotify design and engineering teams, and undertaking this project has served only to increase that respect. They're really, really brilliant teams doing things that I admire greatly. I appreciate the design decisions they made while designing the app, but I prefer a light theme in my apps, so this project is merely an attempt to cater to my own selfish desires, not to do it "better" than the Spotify team did.</i></p>
+	</section>
+
+  <section class="container">
+    <h4 class="title">Contributing</h4>
+    <p>This skin isn't complete yet, but it is release-ready. If you want to help out by redesigning icons, fixing contrast issues, skinning unstyled parts of the app, or otherwise improving this skin, I'd be happy to have you as a contributor!</p>
+  </section>
+
+  <section class="container">
+    <footer class="footer">
+      <p>Designed and developed by <a target="blank" href="http://devinhalladay.com" title="Devin Halladay">Devin Halladay</a>. Licensed under the <a target="blank" href="https://github.com/devinhalladay/spotio#license" title="MIT License">MIT License</a>.</p>
+    </footer>
+  </section>
 </main>
 
   </body>
