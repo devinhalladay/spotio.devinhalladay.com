@@ -9,5 +9,6 @@ function GetLatestReleaseInfo() {
     var name = release.name;
     var downloadURL = release.zipball_url;
     $("#spotio-download-button").attr("href", "https://github.com/devinhalladay/spotio/releases/download/" + name + "/Spotify.zip");
+    $('#latest-version').text(name);
   });
 }
