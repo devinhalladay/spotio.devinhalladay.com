@@ -10,7 +10,10 @@ main {
 
 header {
   background-color: $color-background-secondary;
-  height: 70vh;
+  height: 45rem;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 10rem;
+  margin-top: 5.2rem;
 }
+
+@import "components/all"
