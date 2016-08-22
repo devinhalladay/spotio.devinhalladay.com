@@ -55,7 +55,8 @@
     <div class="animate-in">
       <h1>Spotio</h1>
       <p>A proof-of-concept Rdio-inspired skin for Spotify.app</p>
-      <a href="#" id="spotio-download-button" class="button button-large">Download</a>
+      <a href="#" onclick="ga('send', 'event', 'button', 'click', 'Download button');" id="spotio-download-button" class="button button-large">Download</a>
+
       <br>
       <small><i>Current version: v1.0</i></small>
       <div class="share">
@@ -92,7 +93,7 @@
     <ul>
       <li>Quit your local Spotify app.</li>
       <li>Make sure you have allowed opening applications from unidentified developers in your system security settings, otherwise this won't work.</li>
-      <li>Download the zipped up Spotify.app binary: <a href="#" id="spotio-download-button">download</a>.</li>
+      <li>Download the zipped up Spotify.app binary: <a href="#" id="spotio-download-button" onclick="ga('send', 'event', 'button', 'click', 'Download button');">download</a>.</li>
       <li>Unzip and launch the app! If you like the way it looks, replace your local Spotify.app with the Spotio version.</li>
     </ul>
   </section>
